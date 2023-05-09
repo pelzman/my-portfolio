@@ -1,0 +1,437 @@
+/* .main-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:center ;
+} */
+body{
+    --background-color:#30538a;
+    --main:#30538A;
+    --text:#00B7AF
+    --btn-color:#FFF7D6
+    
+}
+
+/* Header */
+
+.nav-link{
+    color: #fff ;
+    
+}
+.nav-link:hover{
+   color: #00B7AF; 
+}
+.nav-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.collapsed{
+    display: none;
+    
+}
+
+.toggle-btn{
+    display: flex ;
+}
+.nav-item{
+  display:flex;
+ flex-direction: row;
+  
+}
+
+
+
+/* Home */
+
+.home{
+
+    
+        background-position: top 20% right 10%;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+       overflow-y: hidden;
+}
+
+font{
+  color:#00B7AF;
+  
+}
+.desc{
+    font-size: 35px;
+    font-weight: 600 ;
+    font-style: bold;
+    text-align: start;
+    max-width: 600px;
+    font-family: 'Poppins';    
+    
+}
+
+.home_btn{
+gap: 20px;
+padding: 10px;
+}
+.home,
+.about,
+.project,
+.contact{
+    margin-top: 100px ;
+
+}
+.hire-btn{
+    color:#00B7AF ;
+    background-color: #fff ;
+}
+.hire-btn:hover{
+    background-color:#FFF7D6; 
+    color:#00B7AF ;
+    }
+
+
+.cv-btn{
+    color:#00B7AF ;
+    background-color: #fff ;
+}
+.cv-btn:hover{
+background-color:#FFF7D6; 
+color:#00B7AF ;
+}
+
+/* About */
+.details {
+    text-align: center;
+    
+    font-size:16px;
+}
+.about{
+   width:100%;
+}
+.about-text{
+  font-size: 20px;  
+}
+.about-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Project */
+.project{
+    width: 100%;    
+   text-align: center;
+     
+}
+.project-head{
+    text-align: center;
+}
+
+.name2{
+
+    margin-right: 5px; 
+    font-family:'poppins';
+    font-size:30px; 
+    font-weight:800; 
+    margin-top:10px;
+    color:rgb(255, 127, 155)
+}
+.card-cont{
+padding: 15px 50px;
+text-align: center;
+gap: 20px;
+
+
+}
+
+.card-body{
+    color: white; 
+    font-size:18px;
+    background-color:black;
+    
+}
+.sharp{
+
+border-radius: 10px;
+margin-left: 10px;
+margin-bottom: 20px;
+border-radius: 50%;
+}
+
+.card-footer{
+    color:#000
+}
+
+.card-footer:hover{
+    background-color: #00B7AF;
+    color: #fff
+}
+/* Contact */
+.contact{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-head{
+ text-align: center;
+ font-size: 30px;
+ color:#00B7AF;
+}
+
+.contact-form{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.link-btn{
+    margin:15px 8px;
+    padding: 10px;
+    background-color: transparent;
+    color:#30538a
+}
+
+
+.link-btn:hover {
+    background-color:#00B7AF;
+
+   
+}
+.text{
+    line-height:1.5 ;
+    color: #30538A !important
+}
+.form-btn{
+    background-color: transparent;
+    color:#30538a;
+    border-color: #fff;
+
+}
+.form-btn:hover{
+    background-color:#00B7AF;
+    border-color: #fff;
+    
+}
+.item{
+    width: 100%;
+    display: flex;
+}
+
+
+/* Media query tablet device */
+@media screen and (min-width:576px) and (max-width: 990px) {
+    .nav-container {
+    
+            justify-content: space-between !important;
+    
+        }
+   .collapsed{
+    display: flex;
+   }
+   .toggle-btn {
+       display: none;
+   }
+    .about-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .details{
+        line-height: 2.5;
+    }
+
+    .card-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        padding:20px ;
+    }
+    .contact{
+        width: 100%;
+    }
+
+.contact-data {
+    width: 90%;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: 'Poppins';
+    line-height:1.5em ;
+
+}
+ .text {
+     font-size: 18px;
+    line-height: 2;
+ }
+
+ .contact-item {
+     margin-left: 20px;
+ }
+
+ .link {
+     margin: 10px;
+    padding: 5px;
+
+ }
+
+ .link:hover {
+     background-color: rgb(255, 127, 155);
+ }
+
+ .form-btn {
+     padding: 5px 20px;
+ }
+         .contact-form {
+             width: 100%;
+             padding: 20px;
+             margin-left: 20px;
+         }
+        .sharp {
+            width: 16rem;
+            margin-left: 15px;
+        }
+        .card-text {
+            font-size: 15px;
+        }
+
+        .card-image {
+            height: 180px;
+            border-radius: 10px;
+        }
+        .row{
+            display: flex;
+            flex-direction: row !important;
+        }
+                                
+}
+
+  /* Media query for desktop and laptop devices */
+@media (min-width:992px) {
+.nav-container {
+    
+        justify-content: space-between !important;
+
+    }
+    .collapsed{
+        display: flex;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+.home {
+
+
+        background-position: top 20% right -10%;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+.about-logo {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);       
+        gap:20px
+    }
+  
+    .about-text{
+        width: 60%;
+        text-align: center;
+        font-size: 50px;
+       
+}
+.about-all{
+    line-height: 4;
+}
+.details{
+    padding: 0 80px;
+    font-size: 24px;
+    margin-inline: auto;
+    line-height: 2.5;
+    
+}
+.card-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+     column-gap: 15px ;
+     
+     
+
+    
+}
+  .name2 {
+      font-size: 40px;
+      width: 800px;
+
+  }
+  .desc{
+    font-size: 30px;
+  }
+  .contact{
+    width: 100%;
+  }
+  .contact-form{
+    width: 80%;
+    padding: 40px;
+    margin-left: 20px;
+  }
+.text{
+    line-height: 3;
+    font-size: 20px ;
+}
+
+
+  .contact-item{
+    margin-left: 20px;
+    padding-top: 20px;
+    
+  }
+  .link{
+    margin: 10px;
+     padding: 8px;
+
+  }
+
+.form-btn{
+    padding: 10px 30px;
+}
+.card-body{
+    font-size: 40px;
+    background-color: black; 
+    
+
+
+
+}
+.sharp{
+ width: 18rem;
+    height: 100%;
+    margin-left:15px;
+    border-bottom-left-radius: 20px;
+    
+    
+}
+.card-text{
+    font-size:15px ;
+}
+.card-image{
+min-width: 180px;
+min-height: 180px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row !important;
+}
+   
+
+}
